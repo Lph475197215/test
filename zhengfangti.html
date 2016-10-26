@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul{
+			width: 200px;
+			height: 200px;
+			margin: 100px auto;
+			position: relative;
+			-webkit-transform-style:preserve-3d;
+			-webkit-perspective:1000;
+		}
+		li{
+			list-style: none;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-size: 40px;
+			line-height: 200px;
+			text-align: center;
+		}
+		li:nth-child(1){
+			background-color: #ADD8E6;
+			-webkit-transform:translateZ(100px);
+		}
+		li:nth-child(2){
+			background-color: #6A5ACD;
+			-webkit-transform:rotateX(180deg) translateZ(100px);
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>第一面</li>
+		<li>第二面</li>
+		<li>第三面</li>
+		<li>第四面</li>
+		<li>第五面</li>
+		<li>第六面</li>
+	</ul>
+</body>
+</html>
